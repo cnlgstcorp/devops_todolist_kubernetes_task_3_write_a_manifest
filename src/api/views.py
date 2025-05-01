@@ -60,7 +60,7 @@ class TodoViewSet(viewsets.ModelViewSet):
 
         
 def readiness(request):
-    return JsonResponse({"status": "ready"})
+    return JsonResponse({"status": "ready"}, status=200)
 
 def liveness(request):
-    return JsonResponse({"status": "alive"})
+    return JsonResponse({"status": "alive"}, status=200)
